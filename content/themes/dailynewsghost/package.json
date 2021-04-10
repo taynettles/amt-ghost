@@ -1,0 +1,13 @@
+{
+	"name" : "daily-news",
+	"version": "1.0.0",
+	"author": {
+		"email": "default@google.com"
+	},
+	"engines": {
+		"ghost-api": "v4"
+	},
+	"keywords": [
+		"ghost-theme"
+	]
+}

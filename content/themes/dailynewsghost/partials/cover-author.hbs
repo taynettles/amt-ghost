@@ -1,0 +1,30 @@
+<div class="cover-wrap">
+	<div class="container">
+		<div class="author-cover {{#if primary_author.cover_image}}" style="background-image: url({{primary_author.cover_image}});"{{else}}no-image"{{/if}}>
+			<div class="overlay">
+				<div class="avatar-wrap">
+					{{#if primary_author.profile_image}}
+						<img src="{{primary_author.profile_image}}" alt="Author image" class="avatar">
+						{{else}}
+						<img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar">
+					{{/if}}
+				</div>
+				<h3 class="author-name">
+					{{primary_author.name}}
+				</h3>
+				<div class="meta-info">
+					<span class="post-count"><i class="fa fa-pencil-square-o fa-fw"></i>{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+					{{#if primary_author.location}}
+					<span class="loaction"><i class="fa fa-map-marker fa-fw"></i>{{primary_author.location}}</span>
+					{{/if}}
+					{{#if primary_author.website}}
+					<span class="website"><i class="fa fa-globe fa-fw"></i><a href="{{primary_author.website}}" targer="_BLANK">Website</a></span>
+					{{/if}}
+				</div>
+				{{#if primary_author.bio}}
+				<div class="bio">{{primary_author.bio}}</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>
