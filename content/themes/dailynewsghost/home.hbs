@@ -62,6 +62,29 @@
 		<div class="col-md-8">
 			<div  id ="category-container">
 			<!-- here special categorized posts will be added -->
+				<div class="category-wrap" id="category-type-one">
+					<h2 class="h4 category-name">
+						<span>"POLITICS</span>
+					</h2>
+					<div class="row default-layout">
+						<div class="featured-media">
+		    			<a href="{{url}}" title="{{{title}}}">
+		    				<div class="image-container" {{#if feature_image}} style="background-image: url({{feature_image}});" {{/if}}>
+								</div>
+							</a>
+							{{#if "tags"}}
+							<div class="tag-list">
+								{{tags separator=""}}
+							</div>
+							{{/if}}
+							<div class="title-wrap">
+								<a href="{{url}}">
+									<h2 class="h5 title">{{{title}}}</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			{{pagination}}
 		</div>
