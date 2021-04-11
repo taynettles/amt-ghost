@@ -70,6 +70,8 @@
 					<!-- start post -->
 						<article class="col-sm-6 post-wrap">
 							<div class="featured-media">
+							<div class="image-container" {{#if feature_image}} style="background-image: url({{feature_image}});" {{/if}}>
+							</div>
 		    			<a href="{{url}}" title="{{{title}}}"></a>
 							{{#if "tags"}}
 							<div class="tag-list">
