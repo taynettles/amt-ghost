@@ -67,12 +67,14 @@
 						<span>POLITICS</span>
 					</h2>
 					<div class="row default-layout">
+
 					<!-- start post -->
-						<article class="col-sm-6 post-wrap">
-							
+
+						<article class="col-sm-6 post-wrap {{post_class}}">
 							<div class="featured-media">
-							<div class="image-container" {{#if feature_image}} style="background-image: url({{feature_image}});" {{/if}}>
-								<a href="{{url}}" title="{{{title}}}"></a>
+								<a href="{{url}}" title="{{title}}">
+									<div class="image-container" {{#if feature_image}} style="background-image: url({{feature_image}});" {{/if}}>
+								</a>
 								{{#if "tags"}}
 								<div class="tag-list">
 									{{tags separator=""}}
@@ -82,7 +84,6 @@
 								<a href="{{url}}">{{{title}}}</a>
 								</h2>
 							</div>
-		    		
 							<div class="post-meta">
 								<span class="date">
 									<i class="fa fa-calendar-o"></i>
@@ -90,7 +91,7 @@
 								</span>
 								<span class="comment">
 									<i class="fa fa-comment-o"></i>
-									{{comments}} comments
+									{{comments}} 0 comments
 								</span>
 								<a class="permalink" href="{{url}}">Read More...</a>
 							</div>
